@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Tasks</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+    }
+    h2 {
+      color: #2b4c9c;
+    }
+    table {
+      width: 60%;
+      border-collapse: collapse;
+      background-color: #b0e0e6;
+    }
+    table, th, td {
+      border: 1px solid white;
+      padding: 8px;
+      text-align: left;
+    }
+    .task {
+      border-top: 5px solid black;
+      padding: 20px;
+    }
+    .form-section {
+      width: 50%;
+    }
+    .form-section td {
+      padding: 5px;
+    }
+    .register-title {
+      color: blue;
+      font-size: 22px;
+      font-weight: bold;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+
+<!-- Task 1 -->
+<div class="task">
+  <h2>Task 1</h2>
+  <table>
+    <tr>
+      <th>Firstname</th>
+      <th>Lastname</th>
+      <th>Age</th>
+    </tr>
+    <tr>
+      <td>Jill</td>
+      <td>Smith</td>
+      <td>50</td>
+    </tr>
+    <tr>
+      <td>Eve</td>
+      <td>Jackson</td>
+      <td>94</td>
+    </tr>
+    <tr>
+      <td>John</td>
+      <td>Doe</td>
+      <td>80</td>
+    </tr>
+  </table>
+</div>
+
+<!-- Task 2 -->
+<div class="task">
+  <h2>Task 2</h2>
+  <p>Lists can be nested (list inside list):</p>
+  <ul>
+    <li>Coffee</li>
+    <li>Tea
+      <ul>
+        <li>Black tea</li>
+        <li>Green tea</li>
+      </ul>
+    </li>
+    <li>Milk</li>
+  </ul>
+  <p>Click any of the following links</p>
+  <p>
+    <a href="https://example.com" target="_blank">Opens in New</a> |
+    <a href="https://example.com" target="_self">Opens in Self</a> |
+    <a href="https://example.com" target="_parent">Opens in Parent</a> |
+    <a href="https://example.com" target="_top">Opens in Body</a>
+  </p>
+</div>
+
+<!-- Task 3 -->
+<div class="task">
+  <h2>Task 3</h2>
+  <form>
+    <div class="register-title">Registration form</div>
+    <table class="form-section">
+      <tr>
+        <td>First Name:</td>
+        <td><input type="text" name="firstname" /></td>
+      </tr>
+      <tr>
+        <td>Last Name:</td>
+        <td><input type="text" name="lastname" /></td>
+      </tr>
+      <tr>
+        <td>Email:</td>
+        <td><input type="email" name="email" /></td>
+      </tr>
+      <tr>
+        <td>Password:</td>
+        <td><input type="password" name="password" /></td>
+      </tr>
+      <tr>
+        <td>Re-enter Password:</td>
+        <td><input type="password" name="repassword" /></td>
+      </tr>
+      <tr>
+        <td>Gender:</td>
+        <td>
+          <input type="radio" name="gender" value="male"> Male
+          <input type="radio" name="gender" value="female"> Female
+        </td>
+      </tr>
+      <tr>
+        <td>Age:</td>
+        <td><input type="number" name="age" /></td>
+      </tr>
+      <tr>
+        <td>Phone Number:</td>
+        <td><input type="text" name="phone" /></td>
+      </tr>
+      <tr>
+        <td>Address:</td>
+        <td><textarea name="address" rows="3" cols="30"></textarea></td>
+      </tr>
+      <tr>
+        <td>State:</td>
+        <td><input type="text" name="state" /></td>
+      </tr>
+      <tr>
+        <td>Country:</td>
+        <td>
+          <select>
+            <option>Choose your country</option>
+            <option>India</option>
+            <option>USA</option>
+            <option>UK</option>
+          </select>
+        </td>
+      </tr>
+      <tr>
+        <td>Languages known:</td>
+        <td>
+          <input type="checkbox" name="lang" value="English"> English
+          <input type="checkbox" name="lang" value="Kannada"> Kannada
+          <input type="checkbox" name="lang" value="Hindi"> Hindi
+          <input type="checkbox" name="lang" value="Telugu"> Telugu
+        </td>
+      </tr>
+      <tr>
+        <td colspan="2">
+          <input type="checkbox" name="declaration" /> Hereby I declare all the given details are true
+        </td>
+      </tr>
+      <tr>
+        <td colspan="2">
+          <a href="https://www.acharya.ac.in" target="_blank">Log in to Acharya website</a>
+        </td>
+      </tr>
+      <tr>
+        <td colspan="2"><input type="submit" value="Register" /></td>
+      </tr>
+    </table>
+  </form>
+</div>
+
+</body>
+</html>
