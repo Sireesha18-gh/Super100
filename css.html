@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>CSS Tasks</title>
+  <style>
+    /* Task 1 */
+    table.task1 {
+      font-family: Arial;
+      border-collapse: separate;
+      border-spacing: 5px;
+      width: 50%;
+      background-color: #a0d4db;
+      border: 2px solid #000;
+      border-radius: 10px;
+    }
+    .task1 th, .task1 td {
+      border: 1px solid #000;
+      text-align: center;
+      padding: 8px;
+      border-radius: 10px;
+    }
+    .task1 th {
+      font-weight: bold;
+    }
+    .shapes {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      width: 180px;
+      margin-top: 20px;
+    }
+    .box {
+      width: 40px;
+      height: 40px;
+      border: 2px solid limegreen;
+      border-radius: 10px;
+    }
+    .oval {
+      border-radius: 50%;
+    }
+
+    /* Task 2 */
+    .vertical-nav {
+      background-color: lightblue;
+      width: 150px;
+    }
+    .vertical-nav a {
+      display: block;
+      padding: 10px;
+      text-decoration: none;
+      font-size: 18px;
+    }
+    .vertical-nav a:first-child {
+      background-color: orange;
+      color: white;
+    }
+    .horizontal-nav {
+      display: flex;
+      border: 1px solid black;
+      width: fit-content;
+    }
+    .horizontal-nav a {
+      padding: 10px;
+      text-decoration: none;
+      border-right: 1px solid lightgray;
+      font-size: 18px;
+    }
+    .horizontal-nav a:first-child {
+      background-color: gray;
+      color: white;
+    }
+
+    /* Task 3 */
+    table.task3 {
+      width: 80%;
+      border-collapse: collapse;
+    }
+    .task3 th {
+      background-color: green;
+      color: white;
+      padding: 10px;
+    }
+    .task3 td {
+      padding: 10px;
+    }
+    .task3 tr:nth-child(even) {
+      background-color: #f2f2f2;
+    }
+
+    /* Task 4 */
+    .sidenav {
+      height: 100px;
+      width: 50px;
+      position: relative;
+      display: flex;
+      flex-direction: column;
+    }
+    .sidenav a {
+      padding: 20px;
+      margin: 5px 0;
+      transition: 0.3s;
+    }
+    .sidenav a:hover {
+      width: 200px;
+      color: white;
+    }
+    .green { background-color: green; }
+    .blue { background-color: dodgerblue; }
+    .red { background-color: red; }
+    .gray { background-color: gray; }
+
+    /* Task 5 */
+    .login-container {
+      width: 300px;
+      margin: auto;
+      text-align: center;
+    }
+    .login-container img {
+      width: 100px;
+      border-radius: 50%;
+    }
+    .login-container input {
+      width: 90%;
+      padding: 10px;
+      margin: 5px 0;
+    }
+    .login-container button {
+      width: 95%;
+      padding: 10px;
+      margin: 5px 0;
+      font-size: 16px;
+    }
+    .login-btn { background-color: green; color: white; }
+    .cancel-btn { background-color: red; color: white; }
+
+    /* Task 6 */
+    .styled-page {
+      background-color: khaki;
+      padding: 20px;
+      font-family: sans-serif;
+    }
+    .styled-page .nav {
+      width: 100px;
+      float: left;
+    }
+    .styled-page .nav a {
+      display: block;
+      padding: 5px;
+      border-left: 10px solid black;
+      margin: 5px 0;
+      background: white;
+      text-decoration: none;
+    }
+  </style>
+</head>
+<body>
+  <h2>Task 1</h2>
+  <table class="task1">
+    <tr><th>Firstname</th><th>Lastname</th><th>Age</th></tr>
+    <tr><td>Jill</td><td>Smith</td><td>50</td></tr>
+    <tr><td>Eve</td><td>Jackson</td><td>94</td></tr>
+    <tr><td>John</td><td>Doe</td><td>80</td></tr>
+  </table>
+  <div class="shapes">
+    <div class="box"></div><div class="box"></div><div class="box"></div>
+    <div class="box"></div><div class="box"></div><div class="box"></div>
+    <div class="box oval"></div><div class="box"></div><div class="box"></div>
+  </div>
+
+  <h2>Task 2</h2>
+  <h3>Vertical Navigation Bar</h3>
+  <div class="vertical-nav">
+    <a href="#">Home</a>
+    <a href="#">Java</a>
+    <a href="#">CSS</a>
+    <a href="#">HTML</a>
+    <a href="#">Bootstrap</a>
+  </div>
+  <h3>Horizontal Navigation Bar</h3>
+  <div class="horizontal-nav">
+    <a href="#">Home</a>
+    <a href="#">Java</a>
+    <a href="#">HTML</a>
+    <a href="#">CSS</a>
+  </div>
+
+  <h2>Task 3</h2>
+  <table class="task3">
+    <tr><th>Company</th><th>Contact</th><th>Country</th></tr>
+    <tr><td>Alfreds Futterkiste</td><td>Maria Anders</td><td>Germany</td></tr>
+    <tr><td>Berglunds snabbköp</td><td>Christina Berglund</td><td>Sweden</td></tr>
+    <tr><td>Centro comercial Moctezuma</td><td>Francisco Chang</td><td>Mexico</td></tr>
+    <tr><td>Ernst Handel</td><td>Roland Mendel</td><td>Austria</td></tr>
+    <tr><td>Island Trading</td><td>Helen Bennett</td><td>UK</td></tr>
+    <tr><td>Königlich Essen</td><td>Philip Cramer</td><td>Germany</td></tr>
+    <tr><td>Laughing Bacchus Winecellars</td><td>Yoshi Tannamuri</td><td>Canada</td></tr>
+    <tr><td>Magazzini Alimentari Riuniti</td><td>Giovanni Rovelli</td><td>Italy</td></tr>
+  </table>
+
+  <h2>Task 4</h2>
+  <div class="sidenav">
+    <a class="green"></a>
+    <a class="blue"></a>
+    <a class="red"></a>
+    <a class="gray"></a>
+  </div>
+  <div style="margin-left: 60px;">
+    <h3>Hoverable Sidenav Buttons</h3>
+    <p>Hover over the buttons in the left side navigation to open them.</p>
+  </div>
+
+  <h2>Task 5</h2>
+  <div class="login-container">
+    <img src="https://img.freepik.com/premium-vector/avatar-profile-icon-flat-style-female-user-profile-vector-illustration-isolated-background-women-profile-sign-business-concept_157943-38866.jpg?semt=ais_hybrid&w=740" alt="Avatar">
+    <br>
+    <input type="text" placeholder="Enter Username">
+    <input type="password" placeholder="Enter Password">
+    <button class="login-btn">Login</button><br>
+    <input type="checkbox"> Remember me
+    <button class="cancel-btn">Cancel</button><br>
+    <a href="#">Forgot password?</a>
+  </div>
+
+  <h2>Task 6</h2>
+  <div class="styled-page">
+    <div class="nav">
+      <a href="#">Home page</a>
+      <a href="#">Musings</a>
+      <a href="#">My town</a>
+      <a href="#">Links</a>
+    </div>
+    <div style="margin-left:120px;">
+      <h1>My first styled page</h1>
+      <p>Welcome to my styled page!</p>
+      <p>It lacks images, but at least it has style. And it has links, even if they don’t go anywhere...</p>
+      <p>There should be more here, but I don’t know what yet.</p>
+      <p><i>Made 5 April 2004<br>by myself.</i></p>
+    </div>
+  </div>
+</body>
+</html>
